@@ -50,9 +50,16 @@ def find_afterparties():
     # - Replace the empty list in `events` with the list of events from your
     #   search results
 
-    data = {'Test': ['This is just some test data'],
-            'page': {'totalElements': 1}}
+    data = {'keyword': [keyword],
+            'postalcode': [postalcode],
+            'radius': [radius],
+            'unit': [unit],
+            'sort': [sort],
+
+            }
     events = []
+
+    #  Note to self: still need to figure out JSON part
 
     return render_template('search-results.html',
                            pformat=pformat,
