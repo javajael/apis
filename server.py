@@ -60,6 +60,8 @@ def find_afterparties():
     events = []
 
     #  Note to self: still need to figure out JSON part
+    # >>> res = requests.get(url, params=payload)
+    # >>> data = res.json()
 
     return render_template('search-results.html',
                            pformat=pformat,
